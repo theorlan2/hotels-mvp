@@ -74,13 +74,13 @@
 </template>
 
 <script>
-import * as request from '../request/tipos_habitaciones';
+import * as request from '../request/hoteles';
 import FormHotel from '../components/hoteles/FormHotel';
 
 export default {
 head(){
     return {
-        title:'HOTELS MVP - Habitaciones'
+        title:'HOTELS MVP - Hoteles'
     }
 },
 created() {
