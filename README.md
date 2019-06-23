@@ -9,12 +9,12 @@ Prueba de MVP (**Mínimo Producto Viable**).
 
 Para instalar los paquetes en el terminar desde la carpeta raiz corre uno de estos comandos: 
 >  npm install 
->    **o si utilizas** Yarn
+>    **O**  
 >   yarn install 
 
 Luego de finalizar para iniciarlo:
 >  npm run dev
->    **o si utilizas** Yarn 
+>    **O** Yarn 
 >    yarn run dev 
 
 
