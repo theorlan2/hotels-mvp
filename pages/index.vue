@@ -1,14 +1,19 @@
 <template>
   <div class="container home-container">
-
-    <h5 class="aling-center" >Buscar Disponibilidad</h5>
+    <div class="text-center">
+      <h5>Buscar Disponibilidad</h5>
+      <p
+        class="text-secondary"
+      >Realiza una busqueda rapida de Disponibilidad para una fecha en cualquier hotel.</p>
+    </div>
     <DisponibilidadBusc/>
-    <b-container class="cont-list-btns-home" fluid >
+    <b-container class="cont-list-btns-home" fluid>
       <h5>Mantenimientos</h5>
-      <b-row  > 
-        <BtnHomeIcons to='/reservas' icon='/img/reservas-icon.png' text='Reservas' />
-        <BtnHomeIcons to='/tipos_habitaciones' icon='/img/rooms-icon.png' text='Tipos Habitaciones' />
-        <BtnHomeIcons to='/' icon='/img/transport-icon.png' text='Transporte' />        
+      <b-row>
+        <BtnHomeIcons to="/reservas" icon="/img/reservas-icon.png" text="Reservas"/>
+        <BtnHomeIcons to="/hoteles" icon="/img/hotel-icon.png" text="Hoteles"/>
+        <BtnHomeIcons to="/habitaciones" icon="/img/rooms-icon.png" text="Habitaciones"/>
+        <BtnHomeIcons to="/transporte" icon="/img/transport-icon.png" text="Transporte"/>
       </b-row>
     </b-container>
   </div>
@@ -20,6 +25,11 @@ import DisponibilidadBusc from '../components/Inicio/DisponibilidadBusc'
 import BtnHomeIcons from '../components/Inicio/BtnHomeIcons'
 
 export default {
+  head(){
+    return {
+        title:'HOTELS MVP - DASHBOARD'
+    }
+},
   components: { 
     DisponibilidadBusc,
     BtnHomeIcons

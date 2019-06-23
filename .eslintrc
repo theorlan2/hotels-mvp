@@ -1,0 +1,7 @@
+{
+  "extends": "vue-app",
+  "plugins": ["prettier","plugin:vue/recommended"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

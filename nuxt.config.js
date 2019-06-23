@@ -29,7 +29,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    
+    '~/plugins/VeeValidate.js',
+    '~/plugins/lodash.js'
   ],
   /*
   ** Nuxt.js modules

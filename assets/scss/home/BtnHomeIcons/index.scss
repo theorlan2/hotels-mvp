@@ -3,11 +3,18 @@
         
     .cont-btn-home-icon {
         background-color: #009688;
-        padding: 20px;
         text-align: center;
+        border-radius: 2px;
+        box-shadow: 0px 2px 12px -4px rgba(0,0,0,0.2);
+        margin-bottom: 25px;
+        transition: all 275ms ease-in-out;
+        &:hover {
+            box-shadow: 0px 8px 18px -4px rgba(0,0,0,0.3);
+        }
         a {
-            color: #fff;
-
+            display: block;
+            padding: 20px;
+            color: #fff; 
         }
      }
  
