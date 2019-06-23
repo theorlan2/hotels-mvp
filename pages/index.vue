@@ -2,13 +2,15 @@
   <div class="container home-container">
     <div class="text-center">
       <h5>Buscar Disponibilidad</h5>
-      <p
-        class="text-secondary"
-      >Realiza una busqueda rapida de Disponibilidad para una fecha en cualquier hotel.</p>
+      <p class="text-secondary">Realiza una busqueda rapida de disponibilidad para una fecha.</p>
     </div>
     <DisponibilidadBusc/>
     <b-container class="cont-list-btns-home" fluid>
-      <h5>Mantenimientos</h5>
+      <div class="text-center mb-4">
+        <h5>Mantenimientos</h5>
+        <p class="text-secondary">Realiza el mantenimiento de las principales opciones.</p>
+      </div>
+
       <b-row>
         <BtnHomeIcons to="/hoteles" icon="/img/hotel-icon.png" text="Hoteles"/>
         <BtnHomeIcons to="/habitaciones" icon="/img/rooms-icon.png" text="Habitaciones"/>

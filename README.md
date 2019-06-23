@@ -7,6 +7,13 @@ Prueba de MVP (**Mínimo Producto Viable**).
 - Vue   
 - Vue Boostrap
 
+#### Algunos componentes: 
+ - VeeValidate
+ - Flackpiker
+ - Vue-MultiSelect
+
+#
+
 Para instalar los paquetes en el terminar desde la carpeta raiz corre uno de estos comandos: 
 >  npm install 
 >    **O**  
@@ -14,7 +21,7 @@ Para instalar los paquetes en el terminar desde la carpeta raiz corre uno de est
 
 Luego de finalizar para iniciarlo:
 >  npm run dev
->    **O** Yarn 
+>    **O** 
 >    yarn run dev 
 
 
