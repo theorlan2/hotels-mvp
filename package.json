@@ -17,10 +17,12 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
+    "nuxt-vuex-localstorage": "^1.2.6",
     "sass-loader": "^7.1.0",
     "vee-validate": "^2.2.11",
     "vue-flatpickr-component": "^8.1.2",
-    "vue-multiselect": "^2.1.6"
+    "vue-multiselect": "^2.1.6",
+    "vuex-persist": "^2.0.1"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^3.1.0",

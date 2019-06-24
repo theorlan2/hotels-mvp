@@ -30,7 +30,9 @@ export default {
   */
   plugins: [
     '~/plugins/VeeValidate.js',
-    '~/plugins/lodash.js'
+    '~/plugins/lodash.js',
+    '~/plugins/vuex-persist.js',
+    
   ],
   /*
   ** Nuxt.js modules

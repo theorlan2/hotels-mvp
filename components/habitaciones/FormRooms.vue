@@ -85,16 +85,14 @@
       onSubmit(evt) {
         evt.preventDefault()
  this.$validator.validateAll("form_rooms").then(result => {
-          if (result) {
-          // do stuff if not valid.
+          if (result) { 
 
            this.$root.$emit('bv::hide::modal', this.idModal)
         }
       });
       },
       onReset(evt) {
-        evt.preventDefault()
-        // Reset our form values
+        evt.preventDefault() 
         this.form.code = ''
         this.form.name = ''
         this.form.ImageUrl = ''

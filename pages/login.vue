@@ -6,20 +6,47 @@
           <div class="cont-text">
             <h5>HOTELS MVP</h5>
             <p>Administracion de los Hoteles</p>
+            <div class="cont-btn-in-cont-logo">
+              <b-button>Registrarte</b-button>
+            </div>
           </div>
         </b-col>
         <b-col>
-          <b-form @submit="onSubmit" @reset="onReset" class="cont-login-form">
-            <b-form-group id="input-group-1" label="Email:" label-for="input-1" description>
-              <b-form-input id="input-1" v-model="form.email" type="email" required placeholder></b-form-input>
+          <b-form
+            @submit="onSubmit"
+            @reset="onReset"
+            data-vv-scope="form_login"
+            class="cont-login-form"
+          >
+            <b-form-group id="input-group-1" label="Email:" label-for="input-1">
+              <b-form-input
+                id="input-1"
+                v-model="form.email"
+                type="email"
+                name="email"
+                v-validate="'required|email'"
+                placeholder="example@email.com"
+              ></b-form-input>
+              <b-form-invalid-feedback
+                :state="!errors_validate.has('form_login.email')"
+              >{{ errors_validate.first('form_login.email') }}</b-form-invalid-feedback>
             </b-form-group>
 
             <b-form-group id="input-group-2" label="Clave:" label-for="input-2">
-              <b-form-input id="input-2" v-model="form.password" required placeholder></b-form-input>
+              <b-form-input
+                id="input-2"
+                v-model="form.password"
+                type="password"
+                name="clave"
+                v-validate="'required'"
+              ></b-form-input>
+              <b-form-invalid-feedback
+                :state="!errors_validate.has('form_login.clave')"
+              >{{ errors_validate.first('form_login.clave') }}</b-form-invalid-feedback>
             </b-form-group>
-
-            <b-button type="reset" class="btn-cancel" variant="danger">Cancelar</b-button>
-            <b-button type="submit" class="btn-entrar" variant="primary">Entrar</b-button>
+            <div class="cont-btn mt-2 text-center">
+              <b-button type="submit" class="btn-entrar">Entrar</b-button>
+            </div>
           </b-form>
         </b-col>
       </b-row>
@@ -28,7 +55,10 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
   export default {
+    middleware:'logeado',
   head(){
     return {
         title:'HOTELS MVP - Login'
@@ -44,8 +74,13 @@
     },
     methods: {
       onSubmit(evt) {
-        evt.preventDefault()
-        alert(JSON.stringify(this.form))
+        evt.preventDefault();
+        let vm = this;
+        this.$validator.validateAll("form_login").then(result => {
+          if (result) {
+             vm.login( vm.form ); 
+        }
+      });
       },
       onReset(evt) {
         evt.preventDefault()
@@ -53,7 +88,10 @@
         this.form.email = ''
         this.form.password = ''
 
-      }
+      },
+     ...mapMutations({
+      login:'login'
+    }),
     }
   }
 </script>

@@ -26,6 +26,7 @@ import DisponibilidadBusc from '../components/Inicio/DisponibilidadBusc'
 import BtnHomeIcons from '../components/Inicio/BtnHomeIcons'
 
 export default {
+  middleware:'auth',
   head(){
     return {
         title:'HOTELS MVP - Dashboard'

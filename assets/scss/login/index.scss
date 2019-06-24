@@ -3,7 +3,7 @@
     .cont-login-logo {
         background-color: $primary_color;
         .cont-text {
-        margin-top: -14px;
+        margin-top: -50px;
         top: 50%;
         position: relative;
         text-align: center;
@@ -12,6 +12,14 @@
          }
          p {
              color: #fff;
+         }
+         .cont-btn-in-cont-logo {
+             button {
+                 background-color: #fff;
+                 color: #444;
+                 border: none;
+                 box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+             } 
          }
         }
     }
