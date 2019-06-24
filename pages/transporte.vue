@@ -25,13 +25,11 @@
 <script> 
 
 export default {
+middleware:'auth',
 head(){
     return {
         title:'HOTELS MVP - Transporte'
     }
-}, 
-components:{
- 
 },
 data() {
     return {

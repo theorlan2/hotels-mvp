@@ -80,6 +80,7 @@ import * as request from '../request/tipos_habitaciones';
 import FormRooms from '../components/habitaciones/FormRooms';
 
 export default {
+  middleware:'auth',
 head(){
     return {
         title:'HOTELS MVP - Habitaciones'

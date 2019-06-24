@@ -78,6 +78,7 @@ import * as request from '../request/hoteles';
 import FormHotel from '../components/hoteles/FormHotel';
 
 export default {
+middleware:'auth',
 head(){
     return {
         title:'HOTELS MVP - Hoteles'

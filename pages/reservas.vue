@@ -16,6 +16,7 @@
 import * as request from '../request/reservas';
 
 export default {
+ middleware:'auth',
 head(){
     return {
         title:'HOTELS MVP - Reservas'
