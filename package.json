@@ -18,7 +18,7 @@
     "nuxt": "^2.0.0",
     "nuxt-vuex-localstorage": "^1.2.6",
     "sass": "^1.58.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^10",
     "vee-validate": "^2.2.11",
     "vue-flatpickr-component": "^8.1.2",
     "vue-multiselect": "^2.1.6",
