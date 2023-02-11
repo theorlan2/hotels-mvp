@@ -1,6 +1,6 @@
 # Hotels MVP
 
-Prueba de MVP (**Mínimo Producto Viable**).
+Prueba de MVP (**Mínimo Producto Viable**) de hotel.
    
 ### Tecnologias
 - Nuxt.js (Tipo: Single page) 
